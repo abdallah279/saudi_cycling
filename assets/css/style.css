@@ -1022,7 +1022,7 @@ input[type="file"] {
     padding: 8px;
     background-color: var(--dark-color);
     position: relative;
-    z-index: 5;
+    z-index: 10;
 }
 
 .header-m::after{
