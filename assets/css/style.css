@@ -4601,14 +4601,30 @@ ul li.logout-link a .ic i{
 .tracks-section{
     background-color: var(--bg2-color-sections);
 }
+
 .track-cards{
     margin-top: 60px;
+    column-count: 3;
+    column-gap: 40px;
+}
+
+@media screen and (max-width:1199px) {
+    .track-cards{
+        column-count: 2;
+    }
+}
+
+@media screen and (max-width:767.9px) {
+    .track-cards{
+        column-count: 1;
+    }
 }
 
 .track-card{
     background-color: #fff;
-    max-height: 368px;
-    overflow-y: auto;
+    /* max-height: 368px;
+    overflow-y: auto; */
+    margin-bottom: 30px;
 }
 
 .track-card::-webkit-scrollbar {
