@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصور و الفيديوهات</title>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./assets/plugins/OwlCarousel2-2.3.4/dist_2/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/plugins/OwlCarousel2-2.3.4/dist_2/assets/owl.theme.default.min.css">
+    <!-- Fancy Box -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <!-- Style Css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="loader-m">
+        <img src="assets/imgs/cyqle-loader-unscreen.gif" alt="">
+    </div>
+
+    <div class="up-btn">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+    <!-- Start Header -->
+    <header class="header-m">
+        <div class="container">
+            <div class="head-content d-flex justify-content-between align-items-center">
+                <ul class="social d-flex align-items-center">
+                    <li>
+                        <a href="#">
+                            <img src="assets/imgs/social/snapchat.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/imgs/social/linkedin.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/imgs/social/instagram.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/imgs/social/facebook.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/imgs/social/twitter.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <div class="profile-not d-flex justify-content-between align-items-center">
+                    <div class="not dropdown-m-container">
+                        <div class="not-drop d-flex show-drop" data-drop="not">
+                            <i class="fa-solid fa-bell"></i>
+                        </div>
+                        <div class="not-dropdown dropdown-m dropdown-active" data-drop="not">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="ic">
+                                            <i class="fa-solid fa-bell"></i>
+                                        </div>
+                                        <span>تم قبول طلب انشاء الجروب </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="ic">
+                                            <i class="fa-solid fa-bell"></i>
+                                        </div>
+                                        <span>تم استقبال طلب توظيفك وسيتم الرد على الايميل</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="ic">
+                                            <i class="fa-solid fa-bell"></i>
+                                        </div>
+                                        <span>تم حذف الجروب بنجاح</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="profile show-drop dropdown-m-container profile-drop-show" data-drop="profile">
+                        <div class="profile-img">
+                            <img src="assets/imgs/profile.jpg" alt="">
+                        </div>
+                        <div class="profile-name-i">
+                            <div class="profile-drop">
+                                <span class="profile-name">عبدالله زكريا</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="profile-dropdown dropdown-m dropdown-active" data-drop="profile">
+                                <ul>
+                                    <li>
+                                        <a href="user-data.html">
+                                            <div class="ic">
+                                                <i class="fa-regular fa-circle-user"></i>
+                                            </div>
+                                            <span>حسابى</span>
+                                        </a>
+                                    </li>
+                                    <li class="logout-link">
+                                        <a href="login.html">
+                                            <div class="ic">
+                                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                            </div>
+                                            <span>تسجيل الخروج</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Navbar -->
+    <nav class="navbar-m">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/imgs/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="links-container">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/imgs/logo.png" alt="">
+                        </a>
+                    </div>
+                    <ul class="links">
+                        <li>
+                            <a href="about-us.html">
+                                <span class="link-ic-m">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                </span>
+                                <span>عن الاتحاد</span>
+                            </a>
+                        </li>
+                        <li class="dropdown-m-container">
+                            <div class="nav-dropdown dropdown-m">
+                                <ul>
+                                    <li class="nav-collapse">
+                                        <a href="#" class="coll-open">
+                                            <span>اللوائح</span>
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </a>
+                                        <div class="collapse-content">
+                                            <span class="coll">
+                                                <span></span>
+                                                <a href="internal-regulations.html">اللوائح الداخلية</a>
+                                            </span>
+                                            <span class="coll">
+                                                <span></span>
+                                                <a href="international-regulations.html">اللوائح الدولية</a>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="nav-collapse">
+                                        <a href="#" class="coll-open">
+                                            <span>الجدول الزمني</span>
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </a>
+                                        <div class="collapse-content">
+                                            <span class="coll">
+                                                <span></span>
+                                                <a href="inner-activity.html">نشاط الاتحاد الداخلي</a>
+                                            </span>
+                                            <span class="coll">
+                                                <span></span>
+                                                <a href="#">نشاط الاتحاد الخارجي</a>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="photo-video.html">
+                                            <span>الصور و الفيديوهات</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="races.html">
+                                            <span>السباقات</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="results.html">
+                                            <span>النتائج</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span class="lin-name">
+                                <span class="link-ic-m">
+                                    <i class="fa-solid fa-trophy"></i>
+                                </span>
+                                <span>المسابقات</span>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="user-data.html">
+                                <span class="link-ic-m">
+                                    <i class="fa-solid fa-bicycle"></i>
+                                </span>
+                                <span>منصة الدراجين</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tenders-competitions.html">
+                                <span class="link-ic-m">
+                                    <i class="fa-solid fa-briefcase"></i>
+                                </span>
+                                <span>المناقصات و المنافسات</span>
+                            </a>
+                        </li>
+                        <li class="dropdown-m-container">
+                            <div class="nav-dropdown dropdown-m">
+                                <ul>
+                                    <li>
+                                        <a href="training.html">
+                                            <span>التدريب</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="register-in-program.html">
+                                            <span>التسجيل في برنامج (TrainingPeaks)</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span class="lin-name">
+                                <span class="link-ic-m">
+                                    <i class="fa-solid fa-book-open"></i>
+                                </span>
+                                <span>البرامج</span>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="contact-us.html">
+                                <span class="link-ic-m">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </span>
+                                <span>اتصل بنا</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-container d-flex">
+                    <form action="" class="search">
+                        <input type="text" placeholder="ابحث هنا..">
+                        <button type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                    <div class="search-mobile">
+                        <div class="search-icons">
+                            <div class="search-i">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="search-i search-close">
+                                <i class='fa-solid fa-xmark'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="coll-icon">
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Photo Section -->
+    <div class="photo-video-section section-padding">
+        <div class="container">
+            <div class="photo-s">
+                <div class="title-section">
+                    <div class="img-text">
+                        <h3 class="sec-title">مكتبة الصور</h3>
+                    </div>
+                    <div class="section-buttons">
+                        <a href="all-photo.html" class="origin-btn">
+                            عرض كل الصور
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="photo-grid">
+                    <a class="fancybox" data-fancybox-group="gallery" href="assets/imgs/cyclist-pedaling-racing-bike-outdoors_35721-431.webp">
+                        <img src="assets/imgs/cyclist-pedaling-racing-bike-outdoors_35721-431.webp" alt="">
+                    </a>
+                    <a class="fancybox" data-fancybox-group="gallery" href="assets/imgs/cycling_8.avif">
+                        <img src="assets/imgs/cycling_8.avif" alt="">
+                    </a>
+                    <a class="fancybox" data-fancybox-group="gallery" href="assets/imgs/cycling_3.avif">
+                        <img src="assets/imgs/cycling_3.avif" alt="">
+                    </a>
+                    <a class="fancybox" data-fancybox-group="gallery" href="assets/imgs/cycling_2.webp">
+                        <img src="assets/imgs/cycling_2.webp" alt="">
+                    </a>
+                    <a class="fancybox" data-fancybox-group="gallery" href="assets/imgs/cycling_1.jpg">
+                        <img src="assets/imgs/cycling_1.jpg" alt="">
+                    </a>
+                    <a class="fancybox" data-fancybox-group="gallery" href="assets/imgs/news/new6.png">
+                        <img src="assets/imgs/news/new6.png" alt="">
+                    </a>
+                    <a class="fancybox" data-fancybox-group="gallery" href="assets/imgs/1-RCUK-5.jpg">
+                        <img src="assets/imgs/1-RCUK-5.jpg" alt="">
+                    </a>
+                    <a class="fancybox" data-fancybox-group="gallery" href="assets/imgs/news/new1.png">
+                        <img data-fancybox="group" src="assets/imgs/news/new1.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="video-s">
+                <div class="title-section">
+                    <div class="img-text">
+                        <h3 class="sec-title">مكتبة الفيديو</h3>
+                    </div>
+                    <div class="section-buttons">
+                        <a href="all-video.html" class="origin-btn">
+                            عرض الكل
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="video-cards grid-card-3">
+                    <div class="video-card">
+                        <div class="video-container">
+                            <video class="video" width="100%" height="100%">
+                                <source src="assets/imgs/1.mp4" type="video/mp4">
+                            </video>
+                            <div class="player-con">
+                                <a class="fancybox play-v" data-fancybox-group="gallery" href="assets/imgs/1.mp4">
+                                    <i class="fa-solid fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h4 class="video-name">عنوان الفيديو</h4>
+                            <div class="video-icon">
+                                <i class="fa-regular fa-clock"></i>
+                                <span>منذ 3 أسابيع</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-container">
+                            <video class="video" width="100%" height="100%">
+                                <source src="assets/imgs/1.mp4" type="video/mp4">
+                            </video>
+                            <div class="player-con">
+                                <a class="fancybox play-v" data-fancybox-group="gallery" href="assets/imgs/1.mp4">
+                                    <i class="fa-solid fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h4 class="video-name">عنوان الفيديو</h4>
+                            <div class="video-icon">
+                                <i class="fa-regular fa-clock"></i>
+                                <span>منذ 3 أسابيع</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-container">
+                            <video class="video" width="100%" height="100%">
+                                <source src="assets/imgs/1.mp4" type="video/mp4">
+                            </video>
+                            <div class="player-con">
+                                <a class="fancybox play-v" data-fancybox-group="gallery" href="assets/imgs/1.mp4">
+                                    <i class="fa-solid fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h4 class="video-name">عنوان الفيديو</h4>
+                            <div class="video-icon">
+                                <i class="fa-regular fa-clock"></i>
+                                <span>منذ 3 أسابيع</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-container">
+                            <video class="video" width="100%" height="100%">
+                                <source src="assets/imgs/1.mp4" type="video/mp4">
+                            </video>
+                            <div class="player-con">
+                                <a class="fancybox play-v" data-fancybox-group="gallery" href="assets/imgs/1.mp4">
+                                    <i class="fa-solid fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h4 class="video-name">عنوان الفيديو</h4>
+                            <div class="video-icon">
+                                <i class="fa-regular fa-clock"></i>
+                                <span>منذ 3 أسابيع</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-container">
+                            <video class="video" width="100%" height="100%">
+                                <source src="assets/imgs/1.mp4" type="video/mp4">
+                            </video>
+                            <div class="player-con">
+                                <a class="fancybox play-v" data-fancybox-group="gallery" href="assets/imgs/1.mp4">
+                                    <i class="fa-solid fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h4 class="video-name">عنوان الفيديو</h4>
+                            <div class="video-icon">
+                                <i class="fa-regular fa-clock"></i>
+                                <span>منذ 3 أسابيع</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-container">
+                            <video class="video" width="100%" height="100%">
+                                <source src="assets/imgs/1.mp4" type="video/mp4">
+                            </video>
+                            <div class="player-con">
+                                <a class="fancybox play-v" data-fancybox-group="gallery" href="assets/imgs/1.mp4">
+                                    <i class="fa-solid fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h4 class="video-name">عنوان الفيديو</h4>
+                            <div class="video-icon">
+                                <i class="fa-regular fa-clock"></i>
+                                <span>منذ 3 أسابيع</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Photo Section -->
+    
+    <!-- Start Footer -->
+    <footer class="footer">
+        <img src="assets/imgs/g10.png" alt="">
+        <div class="container bg-section-index">
+            <div class="row footer-cards">
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="foot-content">
+                        <h3 class="footer-head">عن الشركة</h3>
+                        <ul class="footer-links">
+                            <li class="foot-link">
+                                <a  data-bs-toggle="modal" href="#exampleModalToggle" role="button" class="link">
+                                    <img src="assets/imgs/footer-icon/bag.png" alt="">
+                                    <span> التوظيف</span>
+                                </a>
+                            </li>
+                            <li class="foot-link">
+                                <a href="#" class="link">
+                                    <img src="assets/imgs/footer-icon/Group.png" alt="">
+                                    <span> الشروط والأحكام</span>
+                                </a>
+                            </li>
+                            <li class="foot-link">
+                                <a href="#" class="link">
+                                    <img src="assets/imgs/footer-icon/message.png" alt="">
+                                    <span> الشكاوي والمقترحات</span>
+                                </a>
+                            </li>
+                            <li class="foot-link">
+                                <a href="#" class="link">
+                                    <img src="assets/imgs/footer-icon/ques.png" alt="">
+                                    <span> أسئلة متكررة</span>
+                                </a>
+                            </li>
+                            <li class="foot-link">
+                                <a href="#" class="link">
+                                    <img src="assets/imgs/footer-icon/partnes.png" alt="">
+                                    <span>شركائنا</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="foot-content">
+                        <h3 class="footer-head">عنوان</h3>
+                        <ul class="footer-links">
+                            <li class="foot-link">
+                                <a href="#" class="link">
+                                    <img src="assets/imgs/footer-icon/arrow.png" alt="">
+                                    <span> عنوان فرعي</span>
+                                </a>
+                            </li>
+                            <li class="foot-link">
+                                <a href="#" class="link">
+                                    <img src="assets/imgs/footer-icon/arrow.png" alt="">
+                                    <span> عنوان فرعي</span>
+                                </a>
+                            </li>
+                            <li class="foot-link">
+                                <a href="#" class="link">
+                                    <img src="assets/imgs/footer-icon/arrow.png" alt="">
+                                    <span> عنوان فرعي</span>
+                                </a>
+                            </li>
+                            <li class="foot-link">
+                                <a href="#" class="link">
+                                    <img src="assets/imgs/footer-icon/arrow.png" alt="">
+                                    <span> عنوان فرعي</span>
+                                </a>
+                            </li>
+                            <li class="foot-link">
+                                <a href="#" class="link">
+                                    <img src="assets/imgs/footer-icon/arrow.png" alt="">
+                                    <span> عنوان فرعي</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 mb-4">
+                    <div class="foot-content">
+                        <h3 class="footer-head">تواصل معنا</h3>
+                        <ul class="footer-links">
+                            <li class="foot-link">
+                                <div class="link">
+                                    <img src="assets/imgs/footer-icon/call.png" alt="">
+                                    <span> 0555 66 33365 - 0555 66 33365</span>
+                                </div>
+                            </li>
+                            <li class="foot-link">
+                                <div class="link">
+                                    <img src="assets/imgs/footer-icon/email.png" alt="">
+                                    <span>sample.email@provider.com</span>
+                                </div>
+                            </li>
+                            <li class="foot-link">
+                                <div class="link">
+                                    <img src="assets/imgs/footer-icon/map.png" alt="">
+                                    <span>الدولة - المدينة - الحي - الشارع</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="foot-social">
+                            <a href="#" class="social-icon up">
+                                <img src="assets/imgs/social/LinkedIn Icon.png" alt="">
+                            </a>
+                            <a href="#" class="social-icon up">
+                                <img src="assets/imgs/social/Dribbble Icon.png" alt="">
+                            </a>
+                            <a href="#" class="social-icon up">
+                                <img src="assets/imgs/social/Twitter Icon.png" alt="">
+                            </a>
+                            <a href="#" class="social-icon up">
+                                <img src="assets/imgs/social/Facebook Icon.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img src="assets/imgs/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-imgs">
+                <div class="foot-img">
+                    <img src="assets/imgs/footer-img/رؤية 2030 1.png" alt="">
+                </div>
+                <div class="foot-img">
+                    <img src="assets/imgs/footer-img/FGukBgBWUAcqZdZ.png" alt="">
+                </div>
+                <div class="foot-img">
+                    <img src="assets/imgs/footer-img/299992881_442502424561802_1372977720806681913_n 1.png" alt="">
+                </div>
+                <div class="foot-img">
+                    <img src="assets/imgs/footer-img/Untitled-23-dd.png" alt="">
+                </div>
+                <div class="foot-img">
+                    <img src="assets/imgs/footer-img/uci.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <button type="button" class="close-model-btn" data-bs-dismiss="modal" aria-label="Close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="content-model-me">
+                <div class="modal-header">
+                  <h1 class="modal-title" id="exampleModalToggleLabel">نموذج التوظيف</h1>
+                </div>
+                <form action="">
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="input-g">
+                                    <label for="nameM">الاسم</label>
+                                    <div class="main-input">
+                                        <input type="text" placeholder="ادخل الاسم ثلاثي" id="nameM" />
+                                        <i class="fa-regular fa-address-card"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="input-g">
+                                    <label for="phoneM">رقم الجوال</label>
+                                    <div class="main-input">
+                                        <input type="number" placeholder="ادخل رقم الجوال" id="phoneM" />
+                                        <i class="fa-regular fa-id-card"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="input-g">
+                                    <label for="gmailM">البريد الالكتروني</label>
+                                    <div class="main-input">
+                                        <input type="email" placeholder="الرجاء ادخال البريد الالكتروني" id="gmailM" />
+                                        <i class="fa-regular fa-envelope"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="input-g">
+                                    <label for="">السيرة الذاتية</label>
+                                    <div class="input-file">
+                                        <input type="file" id="fileM">
+                                        <label for="fileM" class="file-label">
+                                            <span>الرجاء ارفاق السيرة الذاتية</span>
+                                            <i class="fa-solid fa-paperclip"></i>
+                                        </label>
+                                        <div class="file-text"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="input-g">
+                                    <label for="">روابط خارجية</label>
+                                    <div class="main-input">
+                                        <input type="email" placeholder="الموقع الشخصي , لينكيد ان واخري" id="" />
+                                        <i class="fa-solid fa-earth-asia"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="form-btn up" type="button" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">ارسال</button>
+                      </div>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade done-modal" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <button type="button" class="close-model-btn" data-bs-dismiss="modal" aria-label="Close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="content-model-me">
+                <div class="modal-header">
+                  <img src="assets/imgs/Checked.gif" alt="">
+                </div>
+                <div class="modal-body">
+                  <p>تم ارسال طلبك بنجاح سيتم اعلامك عند الموافقة</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="main-btn" type="button" data-bs-dismiss="modal" aria-label="Close">المتابعة</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- Fancy Box -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script>
+        $('.fancybox').fancybox({});
+    </script>
+    <!-- <script>
+        let player = document.querySelector('.video');
+        let playerV = document.querySelector('.player-con');
+        playerV.addEventListener('click', ()=>{
+            player.play();
+        })
+    </script> -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -4635,19 +4635,36 @@ ul li.logout-link a .ic i{
 .photo-section{
     background-color: var(--bg1-color-sections);
 }
+
 .photo-grid{
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(3 , 1fr);
-    gap: 20px 20px;
+    gap: 20px 20px; */
+    column-count: 3;
+    column-gap: 20px;
 }
 
 .photo-grid img{
     width: 100%;
-    height: 100%;
+    max-height: 100%;
+    border-radius: 5px;
     object-fit: cover;
+    transition: all .3s ease;
 }
 
-.photo-grid a:nth-child(1){
+.photo-grid a{
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.photo-grid a:hover img{
+    transform: scale(1.1) rotate(-1deg);
+}
+
+/* .photo-grid a:nth-child(1){
     grid-row: span 2;
 }
 
@@ -4658,7 +4675,7 @@ ul li.logout-link a .ic i{
 .photo-grid a:nth-child(8){
     grid-column: span 2;
     grid-row: span 2;
-}
+} */
 
 .more-btn .origin-btn{
     margin: auto;
@@ -4667,24 +4684,107 @@ ul li.logout-link a .ic i{
     padding: 0 15px;
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width:768px) {
     .photo-grid{
-        display: block;
+        column-count: 2;
     }
-    
-    .photo-grid a{
-        display: block;
-        margin-bottom: 15px;
+}
+
+@media screen and (max-width:340px) {
+    .photo-grid{
+        column-count: 1;
     }
-    
-        .photo-grid a:last-child{
-            margin-bottom: 0;
-        }
 
     .photo-grid img{
-        width: 100%;
-        height: 260px;
+        height: 200px;
     }
 }
 
 /********************* End photo-grid *********************/
+/********************* Start Photo-video section *********************/
+.photo-video-section{
+    background-color: var(--bg2-color-sections);
+}
+
+.photo-video-section .title-section .origin-btn{
+    width: fit-content;
+    padding: 0 18px;
+}
+
+.photo-s{
+    margin-bottom: 60px;
+}
+
+.video-card{
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.video-card .video-container{
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.video-card .video-container .player-con{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0 0 0 / 60%);
+    z-index: 1;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   /* cursor: pointer; */
+}
+
+.video-card .video-container .play-v{
+   background-color: var(--main-color);
+   font-size: 18px;
+   width: 50px;
+   height: 50px;
+   color: #fff;
+   cursor: pointer;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 2;
+   transition: all .3s ease;
+}
+
+.video-card .video-container .player-con:hover .play-v{
+    transform: scale(1.2);
+    background-color: var(--origin-color);
+    box-shadow: 0 0 15px var(--origin-color);
+}
+
+.video-card .video{
+    width: 100%;
+    height: 100%;
+}
+
+.video-card .video-info{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.video-card .video-info .video-name{
+    font-size: 18px;
+    font-family: myFont2;
+    color: var(--main-color);
+}
+
+.video-card .video-info .video-icon{
+    font-size: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: rgb(0 55 49 / 80%);
+}
+/********************* End Photo-video section *********************/
