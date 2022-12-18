@@ -1973,6 +1973,7 @@ ul li.logout-link a .ic i{
     height: 85px;
     object-fit: cover;
     z-index: -1;
+    /* animation: MoveUpDown 8s linear infinite; */
 }
 
 .home-section > .top-circle{
@@ -1983,7 +1984,25 @@ ul li.logout-link a .ic i{
     height: 85px;
     object-fit: cover;
     z-index: -1;
+    /* animation: MoveLeftRight 16s linear infinite; */
 }
+/* @keyframes MoveUpDown {
+    0%, 100% {
+      top: 0px;
+    }
+    50% {
+      top: calc(100% - 100px);
+    }
+}
+
+@keyframes MoveLeftRight {
+    0%, 100% {
+      left: 0px;
+    }
+    50% {
+      left: calc(100% - 100px);
+    }
+} */
 
 @media screen and (max-width:769px) {
     .home-section > .left-img{
@@ -2327,6 +2346,7 @@ ul li.logout-link a .ic i{
     box-shadow: 0 0px 10px rgb(0 0 0 / 15%);
     border-radius: 12px;
     overflow: hidden;
+    transition: all .3s ease;
 }
 
 .r-ifram-content .race-img-i{
@@ -2337,7 +2357,17 @@ ul li.logout-link a .ic i{
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    transition: all .3s ease;
 }
+/* 
+.r-ifram-content:hover{
+    box-shadow: 0 0px 20px rgb(0 0 0 / 35%);
+    transform: translateY(-10px);
+} */
+/* 
+.r-ifram-content:hover .race-img-i{
+    transform: scale(1.06) rotate(1deg);
+} */
 
 .r-ifram-content .race-img2-i{
     position: absolute;
@@ -2362,10 +2392,6 @@ ul li.logout-link a .ic i{
 }
 
 @media screen and (max-width:768px) {
-    /* .race-ifram{
-        padding: 70px 0;
-    }
-     */
     .r-ifram-content{
         height: 160px;
     }
@@ -2375,15 +2401,16 @@ ul li.logout-link a .ic i{
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:426px) {
     .r-ifram-content{
         height: 120px;
     }
-    
+
     .r-ifram-content .race-link-i{
         font-size: 20px;
     }
 }
+
 
 @media screen and (max-width:376px) {
     .r-ifram-content .race-link-i{
@@ -4727,6 +4754,24 @@ ul li.logout-link a .ic i{
 .photo-video-section .title-section .origin-btn{
     width: fit-content;
     padding: 0 18px;
+}
+
+    .photo-video-section .title-section .origin-btn i{
+        font-size: 14px;
+    }
+
+@media screen and (max-width: 575px){
+    .photo-video-section .title-section {
+        gap: 25px;
+        justify-content: space-between;
+    }
+
+    .photo-video-section .title-section .origin-btn{
+        height: fit-content;
+        padding: 8px 15px;
+        font-size: 16px;
+        border-radius: 5px;
+    }
 }
 
 .photo-s{
