@@ -3449,6 +3449,7 @@ ul li.logout-link a .ic i{
 .user-img-container .user-img > img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .user-img-container .user-icon{
@@ -4604,11 +4605,12 @@ ul li.logout-link a .ic i{
 
 .track-cards{
     margin-top: 60px;
-    column-count: 3;
+    /* column-count: 3; */
+    columns: 300px 3;
     column-gap: 40px;
 }
 
-@media screen and (max-width:1199px) {
+/* @media screen and (max-width:1199px) {
     .track-cards{
         column-count: 2;
     }
@@ -4618,7 +4620,7 @@ ul li.logout-link a .ic i{
     .track-cards{
         column-count: 1;
     }
-}
+} */
 
 .track-card{
     background-color: #fff;
