@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!-- Bootstrap 5 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./assets/plugins/OwlCarousel2-2.3.4/dist_2/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/plugins/OwlCarousel2-2.3.4/dist_2/assets/owl.theme.default.min.css">
     <!-- Style Css -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -317,6 +320,35 @@
     </div>
     <!-- End Home Section -->
 
+    <!-- Start Numbers_det Section -->
+    <div class="numbers-det">
+        <img src="assets/imgs/num_t_img.png" alt="" class="d-none d-lg-block">
+        <div class="numbers-container">
+            <img src="assets/imgs/num_bg.png" alt="">
+            <div class="container number-padding">
+                <div class="row g-0">
+                    <div class="col-lg-3 col-0"></div>
+                    <div class="col-4 col-lg-3 number-item">
+                        <img src="assets/imgs/cyc_num.png" alt="" class="number-img">
+                        <span class="number-text">عدد الأعضاء</span>
+                        <span class="number-num">+500</span>
+                    </div>
+                    <div class="col-4 col-lg-3 number-item">
+                        <img src="assets/imgs/cuo_num.png" alt="" class="number-img">
+                        <span class="number-text">الـجـوائــز</span>
+                        <span class="number-num">26</span>
+                    </div>
+                    <div class="col-4 col-lg-3 number-item">
+                        <img src="assets/imgs/user_num.png" alt="" class="number-img">
+                        <span class="number-text">عدد الفرق</span>
+                        <span class="number-num">34</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Numbers_det Section -->
+
     <!-- Start News Section -->
     <div class="news-section section-padding">
         <div class="container">
@@ -439,36 +471,57 @@
     <!-- End News Section -->
 
     <!-- Start Iframs Section -->
-    <div class="ifram-section">
+    <div class="ifram-section section-padding">
         <div class="container">
-            <div class="race-ifram section-padding">
-                <div class="r-ifram-content">
-                    <img src="assets/imgs/masar.png" alt="" class="race-img-i">
-                    <!-- <img src="assets/imgs//Group 328.png" alt="" class="race-img2-i"> -->
-                    <a href="tracks.html" class="race-link-i">مسارات الدرجات في انحاء المملكة</a>
-                </div>
-            </div>
-            <div class="social-iframs section-padding">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="frame-title twitter-title-f">
-                            <i class="fa-brands fa-twitter" class="social-fram-i"></i>
-                            <h3 class="fr-tit">تويتر</h3>
-                        </div>
-                        <iframe class="social-ifram" width="100%" scrolling="no" height="450" frameborder="0" allowfullscreen src="https://syndication.twitter.com/srv/timeline-profile/screen-name/saudi_cycling?dnt=true&embedId=twitter-widget-0&features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOlsibGlua3RyLmVlIiwidHIuZWUiLCJ0ZXJyYS5jb20uYnIiLCJ3d3cubGlua3RyLmVlIiwid3d3LnRyLmVlIiwid3d3LnRlcnJhLmNvbS5iciJdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2hvcml6b25fdGltZWxpbmVfMTIwMzQiOnsiYnVja2V0IjoidHJlYXRtZW50IiwidmVyc2lvbiI6bnVsbH0sInRmd190d2VldF9lZGl0X2JhY2tlbmQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3JlZnNyY19zZXNzaW9uIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19zaG93X2J1c2luZXNzX3ZlcmlmaWVkX2JhZGdlIjp7ImJ1Y2tldCI6Im9mZiIsInZlcnNpb24iOm51bGx9LCJ0ZndfY2hpbl9waWxsc18xNDc0MSI6eyJidWNrZXQiOiJjb2xvcl9pY29ucyIsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfcmVzdWx0X21pZ3JhdGlvbl8xMzk3OSI6eyJidWNrZXQiOiJ0d2VldF9yZXN1bHQiLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3NlbnNpdGl2ZV9tZWRpYV9pbnRlcnN0aXRpYWxfMTM5NjMiOnsiYnVja2V0IjoiaW50ZXJzdGl0aWFsIiwidmVyc2lvbiI6bnVsbH0sInRmd19leHBlcmltZW50c19jb29raWVfZXhwaXJhdGlvbiI6eyJidWNrZXQiOjEyMDk2MDAsInZlcnNpb24iOm51bGx9LCJ0ZndfZHVwbGljYXRlX3NjcmliZXNfdG9fc2V0dGluZ3MiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3ZpZGVvX2hsc19keW5hbWljX21hbmlmZXN0c18xNTA4MiI6eyJidWNrZXQiOiJ0cnVlX2JpdHJhdGUiLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmx1ZV92ZXJpZmllZF9iYWRnZSI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&frame=false&hideBorder=false&hideFooter=false&hideHeader=false&hideScrollBar=false&lang=en&maxHeight=450px&origin=https%3A%2F%2Fsacf.sa%2F&sessionId=815e8c798ae7d62e537b02fe274d38b743204706&showHeader=true&showReplies=false&theme=dark&transparent=false&widgetsVersion=a3525f077c700%3A1667415560940" ></iframe>
+                <div class="race-ifram">
+                    <div class="r-ifram-content">
+                        <img src="assets/imgs/masar.png" alt="" class="race-img-i">
+                        <!-- <img src="assets/imgs//Group 328.png" alt="" class="race-img2-i"> -->
+                        <a href="tracks.html" class="race-link-i">مسارات الدرجات في انحاء المملكة</a>
                     </div>
-                    <div class="col-md-6">
-                        <div class="frame-title instagram-title-f">
-                            <i class="fa-brands fa-instagram" class="social-fram-i"></i>
-                            <h3 class="fr-tit">انستجرام</h3>
+                </div>
+                <div class="social-iframs">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="frame-title twitter-title-f">
+                                <i class="fa-brands fa-twitter" class="social-fram-i"></i>
+                                <h3 class="fr-tit">تويتر</h3>
+                            </div>
+                            <iframe class="social-ifram" width="100%" scrolling="no" height="450" frameborder="0" allowfullscreen src="https://syndication.twitter.com/srv/timeline-profile/screen-name/saudi_cycling?dnt=true&embedId=twitter-widget-0&features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOlsibGlua3RyLmVlIiwidHIuZWUiLCJ0ZXJyYS5jb20uYnIiLCJ3d3cubGlua3RyLmVlIiwid3d3LnRyLmVlIiwid3d3LnRlcnJhLmNvbS5iciJdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2hvcml6b25fdGltZWxpbmVfMTIwMzQiOnsiYnVja2V0IjoidHJlYXRtZW50IiwidmVyc2lvbiI6bnVsbH0sInRmd190d2VldF9lZGl0X2JhY2tlbmQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3JlZnNyY19zZXNzaW9uIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19zaG93X2J1c2luZXNzX3ZlcmlmaWVkX2JhZGdlIjp7ImJ1Y2tldCI6Im9mZiIsInZlcnNpb24iOm51bGx9LCJ0ZndfY2hpbl9waWxsc18xNDc0MSI6eyJidWNrZXQiOiJjb2xvcl9pY29ucyIsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfcmVzdWx0X21pZ3JhdGlvbl8xMzk3OSI6eyJidWNrZXQiOiJ0d2VldF9yZXN1bHQiLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3NlbnNpdGl2ZV9tZWRpYV9pbnRlcnN0aXRpYWxfMTM5NjMiOnsiYnVja2V0IjoiaW50ZXJzdGl0aWFsIiwidmVyc2lvbiI6bnVsbH0sInRmd19leHBlcmltZW50c19jb29raWVfZXhwaXJhdGlvbiI6eyJidWNrZXQiOjEyMDk2MDAsInZlcnNpb24iOm51bGx9LCJ0ZndfZHVwbGljYXRlX3NjcmliZXNfdG9fc2V0dGluZ3MiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3ZpZGVvX2hsc19keW5hbWljX21hbmlmZXN0c18xNTA4MiI6eyJidWNrZXQiOiJ0cnVlX2JpdHJhdGUiLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmx1ZV92ZXJpZmllZF9iYWRnZSI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&frame=false&hideBorder=false&hideFooter=false&hideHeader=false&hideScrollBar=false&lang=en&maxHeight=450px&origin=https%3A%2F%2Fsacf.sa%2F&sessionId=815e8c798ae7d62e537b02fe274d38b743204706&showHeader=true&showReplies=false&theme=dark&transparent=false&widgetsVersion=a3525f077c700%3A1667415560940" ></iframe>
                         </div>
-                        <iframe class="social-ifram" width="100%" scrolling="no" height="450" frameborder="0" allowfullscreen src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                        <div class="col-md-6">
+                            <div class="frame-title instagram-title-f">
+                                <i class="fa-brands fa-instagram" class="social-fram-i"></i>
+                                <h3 class="fr-tit">انستجرام</h3>
+                            </div>
+                            <iframe class="social-ifram" width="100%" scrolling="no" height="450" frameborder="0" allowfullscreen src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- End Iframs Section -->
+
+    <!-- Start Partners Section -->
+    <div class="partners-section">
+        <div class="partners-title">
+            <h3 class="part-tit">شركاؤنا</h3>
+        </div>
+        <div class="partners-carousel owl-carousel">
+            <img src="assets/imgs/partners/advsto.png" alt="" class="partners-item">
+            <img src="assets/imgs/partners/bikes-all.png" alt="" class="partners-item">
+            <img src="assets/imgs/partners/go-bike.png" alt="" class="partners-item">
+            <img src="assets/imgs/partners/wheels.png" alt="" class="partners-item">
+            <img src="assets/imgs/partners/oud_elite.png" alt="" class="partners-item">
+            <img src="assets/imgs/partners/advsto.png" alt="" class="partners-item">
+            <img src="assets/imgs/partners/bikes-all.png" alt="" class="partners-item">
+            <img src="assets/imgs/partners/go-bike.png" alt="" class="partners-item">
+            <img src="assets/imgs/partners/wheels.png" alt="" class="partners-item">
+            <img src="assets/imgs/partners/oud_elite.png" alt="" class="partners-item">
+        </div>
+    </div>
+    <!-- End Partners Section -->
 
     <!-- Start Footer -->
     <footer class="footer">
@@ -717,6 +770,33 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- Owl Carousel -->
+    <script src="./assets/plugins/OwlCarousel2-2.3.4/dist_2/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".partners-carousel").owlCarousel({
+                items:2,
+                // loop: true,
+                rewind: true,
+                rtl:true,
+                margin: 20,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 1000,
+                autoplaySpeed: 1500,
+                smartSpeed: 1500,
+                autoplayHoverPause: true,
+                responsive:{
+                600:{
+                    items:5
+                },
+                400:{
+                    items: 3
+                }
+            }
+            });
+        });
+    </script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
