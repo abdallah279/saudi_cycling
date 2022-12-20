@@ -54,6 +54,31 @@
                     </li>
                 </ul>
                 <div class="profile-not d-flex justify-content-between align-items-center">
+                    <div class="lang dropdown-m-container">
+                        <div class="lang-drop show-drop" data-drop="lang">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <div class="lang-dropdown dropdown-m dropdown-active" data-drop="lang">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="ic">
+                                            <i class="fa-regular fa-flag"></i>
+                                        </div>
+                                        <span>عربى</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="ic">
+                                            <i class="fa-regular fa-flag"></i>
+                                        </div>
+                                        <span>انجليزى</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="not dropdown-m-container">
                         <div class="not-drop d-flex show-drop" data-drop="not">
                             <i class="fa-solid fa-bell"></i>
@@ -298,12 +323,12 @@
                         <div class="card-title-m">
                             <h3 class="card-tit">مسارات الدرجات في مدينة الرياض</h3>
                         </div>
-                        <div class="card-img">
-                            <img src="assets/imgs/card-img.png" alt="">
+                        <div class="track-img">
+                            <div class="track-map" id="map" style="width:100%;height:200px"></div>
                         </div>
                         <div class="card-buttons">
-                            <a href="#" class="main-btn card-btn"><i class="fa-solid fa-location-dot"></i> المسار الاول</a>
-                            <a href="#" class="main-btn card-btn"><i class="fa-solid fa-location-dot"></i> المسار الثانى</a>
+                            <button type="button" class="main-btn card-btn"><i class="fa-solid fa-location-dot"></i> المسار الاول</button>
+                            <button type="button" class="main-btn card-btn"><i class="fa-solid fa-location-dot"></i> المسار الثانى</button>
                         </div>
                     </div>
                     <div class="main-card track-card">
@@ -521,7 +546,6 @@
     </footer>
     <!-- End Footer -->
 
-
     <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
@@ -566,7 +590,7 @@
                                 <div class="input-g">
                                     <label for="">السيرة الذاتية</label>
                                     <div class="input-file">
-                                        <input type="file" id="fileM">
+                                        <input type="file" id="fileM" class="fileJop" accept=".doc,.docx,.pdf">
                                         <label for="fileM" class="file-label">
                                             <span>الرجاء ارفاق السيرة الذاتية</span>
                                             <i class="fa-solid fa-paperclip"></i>
@@ -595,8 +619,6 @@
         </div>
       </div>
 
-
-
       <div class="modal fade done-modal" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
@@ -618,11 +640,31 @@
         </div>
       </div>
 
-
     <!-- Bootstrap 5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- Map -->
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyA9_ve_oT3ynCaAF8Ji4oBuDjOhWEHE92U&libraries=places"></script>
+    <!-- Initialize And Add The Map -->
+    <script>
+        function initMap() {
+            var location = { lat: 24.7461899665042750, lng: 46.87979460238138 };
+
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 8,
+                center: location,
+            });
+
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                draggable: false,
+            });
+        }
+
+        initMap();
+    </script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

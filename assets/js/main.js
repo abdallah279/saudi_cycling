@@ -55,7 +55,6 @@ showSideBar.addEventListener('click', ()=>{
   showSideBar.classList.toggle('active');
 });
 
-
 // Show And Hide Search Navbar
 let searchIcon = document.querySelector('.search-mobile');
 let searchBox = document.querySelector('.search');

@@ -1073,8 +1073,24 @@ input[type="file"] {
     gap: 12px 5px;
 }
 
+.profile-not{
+    gap: 20px;
+}
+
+.lang-drop i{
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    line-height: inherit;
+}
+
+.lang .lang-dropdown{
+    width: 200px;
+    left: 0px;
+}
+
 .profile-not .not{
-    margin-left: 22px;
+    /* margin-left: 22px; */
     cursor: pointer;
 }
 
@@ -1191,14 +1207,17 @@ ul li.logout-link a .ic i{
 }
 
 @media screen and (max-width:426px) {
-    
+    .profile-not{
+        gap: 9px;
+    }
+
     .header-m .social{
         gap: 5px;
     }
 
-    .profile-not .not{
+    /* .profile-not .not{
         margin-left: 5px;
-    }
+    } */
 
     .profile .profile-img{
         margin-left: 5px;
@@ -1210,7 +1229,7 @@ ul li.logout-link a .ic i{
     }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
     .profile-name{
         display: none;
     }
@@ -2096,7 +2115,7 @@ ul li.logout-link a .ic i{
 /********************* End Home Section *********************/
 /********************* Start numbers-det Section *********************/
 .numbers-det{
-    padding: 40px 0 140px;
+    padding: 40px 0 100px;
     background-color: var(--bg1-color-sections);
     position: relative;
 }
@@ -2149,8 +2168,8 @@ ul li.logout-link a .ic i{
 }
 
 .number-item .number-img{
-    max-width: 90px;
-    max-height: 90px;
+    max-width: 85px;
+    max-height: 85px;
     object-fit: cover;
 }
 
@@ -2206,10 +2225,6 @@ ul li.logout-link a .ic i{
 @media screen and (max-width:426px) {
     .number-padding{
         padding: 70px 0;
-    }
-
-    .number-item{
-        gap: 8px;
     }
 
     .number-item .number-img{
@@ -3727,7 +3742,7 @@ ul li.logout-link a .ic i{
 /********************* End user-data-section *********************/
 /********************* Start Contact *********************/
 .contact-section{
-    padding: 50px 20px;
+    padding: 50px 20px 140px;
 }
 
 .bg-section-title{
@@ -3835,6 +3850,17 @@ ul li.logout-link a .ic i{
 }
 
 /********************* End Contact *********************/
+/********************* Start Map Section *********************/
+.map-section{
+    position: relative;
+    height: 400px;
+}
+
+.map-section #map{
+    top: -80px;
+    z-index: 6;
+}
+/********************* End Map Section *********************/
 /********************* Start training-section *********************/
 
 .grid-card-4{
@@ -4833,6 +4859,14 @@ ul li.logout-link a .ic i{
     margin-bottom: 30px;
 }
 
+.track-img{
+    margin-bottom: 25px;
+}
+
+.track-map{
+    height: 200px;
+}
+
 .track-card::-webkit-scrollbar {
     width: 4px;
 }
@@ -5034,3 +5068,15 @@ ul li.logout-link a .ic i{
     color: rgb(0 55 49 / 80%);
 }
 /********************* End Photo-video section *********************/
+
+.pdf-container{
+    margin: auto;
+    width: 900px;
+    height: 640px;
+}
+
+@media screen and (max-width:992px) {
+    .pdf-container{
+        width: 100%;
+    }
+}
